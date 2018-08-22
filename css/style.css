@@ -1,0 +1,67 @@
+/* TODO:
+-Vids are now responsive, but I want them in a grid formation.
+*/
+body {
+  background-color: #2eb8b8;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.content-div {
+  text-align: center;
+  border-radius: 1em;
+  max-width: 1000px;
+  background-color: #85e0e0;
+  display: block;
+  margin: auto;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#img-div {
+  padding-bottom: 3%;
+}
+#image {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+#img-caption {
+  width: 80%;
+  margin: auto;
+}
+
+#vid-grid-container {
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+}
+#video-grid {
+  max-width: 95%; /*  no effect if width property is not set or 100%!*/
+  display: grid;
+  height: auto;
+  margin: auto;
+}
+@media (orientation: landscape) {
+  #video-grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+@media (orientation: portrait) {
+  #video-grid {
+    grid-template-columns: 100%;
+  }
+}
+/* thank you https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+/* vid is now responsive */
+.vid-embed {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.vid-embed iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
