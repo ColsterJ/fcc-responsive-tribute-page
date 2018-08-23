@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
+
 <head>
-	<meta charset="utf-8"/>
-	<meta name="robots" content="noindex" />
-	<meta name="apple-mobile-web-app-title" content="Test Server" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<link rel="apple-touch-icon" href="Webapp_Icon.png">
+  <meta charset="UTF-8">
+  <title>FCC: Tribute Page</title>
+      <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<div class="gameView">
-	<canvas id="gameCanvas" width="375" height="600"></canvas>
-</div>
 
-<!-- <script type='application/javascript' src='lib/fastclick.js'></script> -->
-<h1 style="font-size:400%;">
-	<center>
-		ROOSTER TEST SERVER<br><br>
-		<a href="/files">GO TO /files DIRECTORY</a>
-	</center>
-</h1>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Slab" rel="stylesheet">
+
+<div id="main">
+  <div id="img-div" class="content-div">
+    <h1 id="title">Cornelius</h1>
+    <h2>a.k.a. Keigo Oyamada</h2>
+    <h3>Japanese experimental musician</h3>
+    <br>
+    <img id="image" src="https://media.pitchfork.com/photos/592f544c1a11d7432ef65f5c/2:1/w_790/42bb23c1.png">
+    <h4 id="img-caption">Ghost-like images of Cornelius interacting with his musical equipment in various ways</h4>
+  </div>
+  <br>
+  <div id="tribute-info" class="content-div" style="text-align:left;">
+    <div id="tribute-info-text">
+      <p><strong>Keigo Oyamada</strong>, best known by his stage name <strong>Cornelius</strong>, is a Japanese rock/electronic recording artist, multi-instrumentalist and singer. His musical career began to take off in the late eighties when he co-founded <strong>Flipper's Guitar</strong>, an influential band in Japan's <strong>Shibuya-kei</strong> scene with a sound heavily influenced by British pop and pop-punk bands of the 1980s.</p>
+      <p>He began his solo career in 1991, upon the dissolution of Flipper's Guitar, and adopted a more experimental and electronic sound. He is often compared to Beck and has indicated that he is heavily influenced by him, as well as the Beach Boys, the Jesus and Mary Chain and other groups. He remains active to this day.</p>
+      <p>Watch the videos below to get a sense of his musical style!</p>
+    </div>
+  </div>
+  <br>
+  <div id="vid-grid-container" class="content-div">
+    <div id="video-grid">
+      <div class="vid-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/feeIShBaLP8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="vid-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/L5xwwpNwQ70" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="vid-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WK-71-b7NSo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+      <div class="vid-embed">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JxAlPA95syw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  <br>
+  <h3 class="content-div">
+        Want to know more about Cornelius? Check out his <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Cornelius_(musician)">entry on Wikipedia</a>, or his <a id="tribute-link2" target="_blank" href="https://www.youtube.com/user/corneliusofficial">official YouTube channel</a>.
+  </h3>
+  <br>
+  <footer style="text-align: center;">Third-party photographs, music videos and other content are property of their respective owners. All original content (c) 2018 Colin Jones.</footer>
+</div>
+  
+  
 
 </body>
+
 </html>
