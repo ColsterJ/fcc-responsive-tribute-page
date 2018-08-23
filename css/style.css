@@ -16,6 +16,16 @@ body {
   padding-top: 1%;
   padding-bottom: 1%;
 }
+
+#tribute-info {
+  max-width: 1000px;
+}
+#tribute-info-text {
+  font-family: 'Roboto Slab', serif;
+  font-weight: Semi-Bold;
+  padding-left: 3%;
+  padding-right: 3%;
+}
 #img-div {
   padding-bottom: 3%;
 }
@@ -44,10 +54,16 @@ body {
   #video-grid {
     grid-template-columns: 50% 50%;
   }
+  #tribute-info-text {
+    font-size: 1.25em;
+  }
 }
 @media (orientation: portrait) {
   #video-grid {
     grid-template-columns: 100%;
+  }
+  #tribute-info-text {
+    font-size: 1em;
   }
 }
 /* thank you https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
